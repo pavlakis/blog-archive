@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"  xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://blog-archive.pavlakis.info/php/21-vagrant-ansible-generic" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Antonis Pavlakis" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>A generic vagrant template using ansible</title>
+  <link href="/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/position.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/layout.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/print.css" type="text/css" media="print"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/nature.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/md_stylechanger.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='is open';
+	var altclose='is closed';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Open info';
+	var rightclose='Close info';
+	var fontSizeTitle='Font size';
+	var bigger='Bigger';
+	var reset='Reset';
+	var smaller='Smaller';
+	var biggerTitle='Increase size';
+	var resetTitle='Revert styles to default';
+	var smallerTitle='Decrease size';
+</script>
+
+</head>
+
+<body>
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                                                        Adventures in Lifelong Development                                                                                <span class="header1">
+                                        /pavlakis                                        </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Skip to content</a></li>
+                                                <li><a href="#nav" class="u2">Jump to main navigation and login</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Nav view search</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+<ul class="menu">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-102"><a href="/about-antonios-pavlakis" >About Me</a></li><li class="item-103 current active"><a href="/php" >PHP</a></li><li class="item-121"><a href="https://github.com/pavlakis" >GitHub</a></li></ul>
+
+                                        <div id="line">
+                                        <div id="fontsize"></div>
+                                        <h3 class="unseen">Search</h3>
+                                        <form action="/php" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Search..."  onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="103" />
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="item-page">
+
+	<h2>
+			<a href="/php/21-vagrant-ansible-generic">
+		A generic vagrant template using ansible</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="/php/21-vagrant-ansible-generic?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=f6aa8c025ae4b4d315b1c03241596c9515399492" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+	<dl class="article-info">
+	<dt class="article-info-term">Details</dt>
+	<dd class="create">
+	Created on Friday, 06 February 2015 14:58	</dd>
+	</dl>
+
+
+
+<p>Most of the PHP projects I work on have a very similar structure. That’s why I created this template so I can reuse it across most projects.</p>
+
+<p>The initial Ansible package has originated from <a href=“http://www.phansible.com/”>Phansible.com</a> which is an awesome tool for easy generating vagrant provisioning using ansible.</p>
+
+<p>In order for this to be a good learning exercise, I created a github repository for the <a href=“https://github.com/pavlakis/vagrant-ansible-generic”>generic vagrant template using ansible</a> where I added branches for each configuration step with clear commits along the way.</p>
+
+<p>As an overview, these are the steps I’ve taken.</p>
+
+<ul>
+<li>(1) Generate the initial template from <a href=“http://www.phansible.com/”>Phansible.com</a> </li>
+<li>(2) Added Ansible tasks to import files in order to create the database schema and also to populate the database.</li>
+<li>(3) Created composer.json and added a task to run composer.</li>
+<li>(4) Created a basic hello world application with a namespace that uses composer’s autoloading.</li>
+</ul>
+
+<p>If you’re just interested for the final implementation, <a href=“https://github.com/pavlakis/vagrant-ansible-generic/tree/step4”>go straight to branch step4</a><p>
+ 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="/php/22-making-a-cli-request-in-slim-3" rel="prev">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="/php/20-getting-started-with-composer-and-psr-4" rel="next">Next &gt;</a>
+					</li>
+				</ul>
+	
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Powered by <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        <div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() { FB.init({appId: '485228941509888', status: true, cookie: true, xfbml: true}); };
+(function() { var e = document.createElement('script');
+e.type = 'text/javascript';
+e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+e.async = true;
+document.getElementById('fb-root').appendChild(e);
+}());
+</script></body>
+</html>

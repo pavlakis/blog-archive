@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"  xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://blog-archive.pavlakis.info/php/14-application-security-and-your-database" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Antonis Pavlakis" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Application security and your Database</title>
+  <link href="/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/position.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/layout.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/print.css" type="text/css" media="print"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/nature.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/md_stylechanger.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='is open';
+	var altclose='is closed';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Open info';
+	var rightclose='Close info';
+	var fontSizeTitle='Font size';
+	var bigger='Bigger';
+	var reset='Reset';
+	var smaller='Smaller';
+	var biggerTitle='Increase size';
+	var resetTitle='Revert styles to default';
+	var smallerTitle='Decrease size';
+</script>
+
+</head>
+
+<body>
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                                                        Adventures in Lifelong Development                                                                                <span class="header1">
+                                        /pavlakis                                        </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Skip to content</a></li>
+                                                <li><a href="#nav" class="u2">Jump to main navigation and login</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Nav view search</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+<ul class="menu">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-102"><a href="/about-antonios-pavlakis" >About Me</a></li><li class="item-103 current active"><a href="/php" >PHP</a></li><li class="item-121"><a href="https://github.com/pavlakis" >GitHub</a></li></ul>
+
+                                        <div id="line">
+                                        <div id="fontsize"></div>
+                                        <h3 class="unseen">Search</h3>
+                                        <form action="/php" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Search..."  onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="103" />
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="item-page">
+
+	<h2>
+			<a href="/php/14-application-security-and-your-database">
+		Application security and your Database</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="/php/14-application-security-and-your-database?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=1a107b18d1c9a43fe486ab82cc1c85f56880fc55" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+	<dl class="article-info">
+	<dt class="article-info-term">Details</dt>
+	<dd class="create">
+	Created on Sunday, 09 December 2012 23:16	</dd>
+	</dl>
+
+
+
+<p><b id="internal-source-marker_0.4358779042959213" style="font-family: 'Times New Roman'; font-size: medium; font-weight: normal;"><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">When creating a web application you have many different levels of security.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">You need a secure network with a firewall, a secure server with the right security patches and updates and a secure application.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">However, a secure application doesn’t mean just code. Is considering how your users will use and abuse the system and taking the necessary precautions in doing so.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">One area that is normally left out is the database and there are actually some simple things you can do, to create an additional level of security.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">As an example, we will take a look at a basic blog site.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">In a blog, we normally get:</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">- The guest user - who is normally browsing the site</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">- The editor - who is normally creating and updating articles on the site</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">- The admin user - who has full access to the system for maintaining the site</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">The database doesn’t really care who is who. The application will connect to the database, perform the query and get the results.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">For our guest user, the application will most probably pass the following sql to the DB:</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">- Select * from content where content.page_name = ‘home’;</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">So, if the guest user will always just read from the database, why should we give them more access than that?</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">I prefer to create different DB users and give them only the access they need for specific tables.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">For the above example, we could have the following:</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">grant select on mydbname.content to <a href="mailto:mydbname_user@localhost identified">mydbname_user@localhost identified</a> by 'ReadOnlyAccess'</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Now, let’s look at the editor. The editor has access to create an article , to update an article and also to read an article.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">So we will give them the following access:</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">grant select, insert, update on mydbname.content to <a href="mailto:mydbname_editor@localhost identified">mydbname_editor@localhost identified</a> by ‘ReadWriteUpdate’</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">How about admin?</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Well admin has many more privileges the amount of which can only be decided by looking at the functionality of that system.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">To keep things simple in line with this example let’s just say that the admin has in addition to the editor, the access to delete an article.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">grant select, insert, update, delete on mydbname.content to <a href="mailto:mydbname_admin@localhost identified">mydbname_admin@localhost identified</a> by ‘ReadWriteUpdateDelete’</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">How about giving more access to other users?</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Well that’s fine, but look into each application/system you’re using and find out exactly what privileges your DB user needs to have.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">For example, in content management systems like Joomla, Drupal, Wordpress, etc, the admin has full access on the database. But what does that mean?</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Well, they can normally read, create, update and delete rows on all tables. What else? Should they be able to drop tables? Can they create new tables? How about drop a database or create a new database?</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Conclusion</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">Having more grained access control will give you an additional level of security. Of course when writing an application you should always take measures to avoid XSS, CSRF and SQL injection. (Look at OWASP - </span><a href="http://www.owasp.org/"><span style="font-size: 15px; font-family: Arial; color: #1155cc; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">www.owasp.org</span></a><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"> - for more details)</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">However, as explained in the beginning of this article in order to have a secure system you need the whole system to be built securely and not just the application part.</span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-size: 15px; font-family: Arial; background-color: transparent; vertical-align: baseline; white-space: pre-wrap;">On your server security, you won’t do chmod 777 and give everyone full access to all your files and directories. So, why do it with your database where potentially you may be storing all your users’ personal data?</span></b></p> 
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="/php/17-phpunit-issues-in-mac-os-x-mountain-lion" rel="prev">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="/php/13-zf1-bootstrap-to-comply-to-psr-standard" rel="next">Next &gt;</a>
+					</li>
+				</ul>
+	
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Powered by <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        <div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() { FB.init({appId: '485228941509888', status: true, cookie: true, xfbml: true}); };
+(function() { var e = document.createElement('script');
+e.type = 'text/javascript';
+e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+e.async = true;
+document.getElementById('fb-root').appendChild(e);
+}());
+</script></body>
+</html>

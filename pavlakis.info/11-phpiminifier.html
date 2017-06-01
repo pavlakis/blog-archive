@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"  xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://blog-archive.pavlakis.info/php/11-phpiminifier" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Antonis Pavlakis" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>PhpIMinifier - Compress your Javascript and CSS files with PHP and YUI</title>
+  <link href="/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/position.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/layout.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/print.css" type="text/css" media="print"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/nature.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/md_stylechanger.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='is open';
+	var altclose='is closed';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Open info';
+	var rightclose='Close info';
+	var fontSizeTitle='Font size';
+	var bigger='Bigger';
+	var reset='Reset';
+	var smaller='Smaller';
+	var biggerTitle='Increase size';
+	var resetTitle='Revert styles to default';
+	var smallerTitle='Decrease size';
+</script>
+
+</head>
+
+<body>
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                                                        Adventures in Lifelong Development                                                                                <span class="header1">
+                                        /pavlakis                                        </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Skip to content</a></li>
+                                                <li><a href="#nav" class="u2">Jump to main navigation and login</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Nav view search</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+<ul class="menu">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-102"><a href="/about-antonios-pavlakis" >About Me</a></li><li class="item-103 current active"><a href="/php" >PHP</a></li><li class="item-121"><a href="https://github.com/pavlakis" >GitHub</a></li></ul>
+
+                                        <div id="line">
+                                        <div id="fontsize"></div>
+                                        <h3 class="unseen">Search</h3>
+                                        <form action="/php" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Search..."  onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="103" />
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="item-page">
+
+	<h2>
+			<a href="/php/11-phpiminifier">
+		PhpIMinifier - Compress your Javascript and CSS files with PHP and YUI</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="/php/11-phpiminifier?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=22015b07c9cf29fe24b36bdc8ae14b9b1244d15c" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+	<dl class="article-info">
+	<dt class="article-info-term">Details</dt>
+	<dd class="create">
+	Created on Wednesday, 28 December 2011 21:01	</dd>
+	</dl>
+
+
+
+<p>This is a script that I've been meaning to write for a very long time. Ever since I read the book by Steve Souders - 'High Performance Web Sites' this has been on my mind, but didn't need anything like this since the websites I built in the past weren't quite this big.</p>
+<p>Initially, I've created this to be used for a very specific Zend Framework application. However, I have made it generic enough and removed the ZF parts to avoid confusion.</p>
+<p>So, what does this script do? <br /> The PhpIMinifier is a PHP Directory Iterator that will compress all your css and js files using the YUI Compressor.</p>
+ 
+<p>The PHP Iterator Minifier will take the following 5 steps:</p>
+<ol>
+<li>Iterate through all directories of chosen type</li>
+<li>Store each directory in a directory array</li>
+<li>Store each chosen type file in an array</li>
+<li>Create all chosen type directories in the new location</li>
+<li>Minify each chosen file type and copy it across to its new location</li>
+</ol>
+<p>&nbsp;</p>
+<p>This is the directory structure I am using:</p>
+<pre>-----/public
+--------------/js
+-----------------/custom
+---------------------------/folderA
+----------------------------test1.js
+----------------------------test2.js
+---------------------------/folderB
+----------------------------test3.js
+---------------------------/folderC
+----------------------------test4.js
+</pre>
+<p>After versioning, the above will look like this:</p>
+<pre>-----/public
+--------------/js
+-----------------/custom
+---------------------------/newVersion
+--------------------------------------------/folderA
+---------------------------------------------test1.js
+---------------------------------------------test2.js
+--------------------------------------------/folderB
+---------------------------------------------test3.js
+--------------------------------------------/folderC
+---------------------------------------------test4.js
+</pre>
+<p>The idea is that by having a different version on each deployment, we are able to set the caching for all files for more than a few weeks and if we happen to make any changes, as soon as we create a new version of a file then the browser will see this as a new file. So from a user's point, this will be much faster (and she won't have to clear cache every time she visits our site).</p>
+<p>Let's take a look at the configuration.</p>
+<p>Initially, we want to set the location of the YUI executable as well as the full path to the public directory.</p>
+<pre>$yuiLocation = "/Users/antonis/Sites/yui/build/yuicompressor-2.4.8pre.jar";
+$public = "/Users/antonis/Sites/branches/development/public/"; 
+</pre>
+<p>Next we want to create a version. I use loosely the Ubuntu style versioning of YearMonth and also add v1 at the end, just in case I happen to deploy more than once on that particular month.</p>
+<p>$version = "1112v1";</p>
+<p>If you are using Zend Framework, you can automate the versioning by setting it in your application.ini and fetching it directly:</p>
+<pre>$configIni = parse_ini_file($public . "../application/configs/application.ini", TRUE); 
+$version = $configIni["production"] ["version"]; 
+</pre>
+<p>We also need to set the root level of the JS and CSS directories:</p>
+<pre>$css = $public . "css/"; 
+$js = $public . "js/custom/";
+</pre>
+<p>And that's the basic configuration done.</p>
+<p>So, let's put it all together. The below example is for CSS compression:</p>
+<p>I normally save all output to a file. The above example will output everything on screen if you just run it using: php PhpIMinifier_Example.php</p>
+<p>Or, you can send it to a file by running: php PhpIMinifier_Example.php &gt; logOutput1.txt</p>
+<p>&nbsp;</p>
+<p>Get the code at GitHub:&nbsp;<a href="https://github.com/pavlakis/PhpIMinifier">https://github.com/pavlakis/PhpIMinifier</a></p>
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="/php/12-database-sessions-with-zf2" rel="prev">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="/php/10-zf2-some-new-features-in-a-nutshell" rel="next">Next &gt;</a>
+					</li>
+				</ul>
+	
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Powered by <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        <div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() { FB.init({appId: '485228941509888', status: true, cookie: true, xfbml: true}); };
+(function() { var e = document.createElement('script');
+e.type = 'text/javascript';
+e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+e.async = true;
+document.getElementById('fb-root').appendChild(e);
+}());
+</script></body>
+</html>

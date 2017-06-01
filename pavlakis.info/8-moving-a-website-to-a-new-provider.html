@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"  xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://blog-archive.pavlakis.info/php/8-moving-a-website-to-a-new-provider" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Antonis Pavlakis" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Moving a Website to a new Provider</title>
+  <link href="/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/position.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/layout.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/print.css" type="text/css" media="print"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/nature.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/md_stylechanger.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='is open';
+	var altclose='is closed';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Open info';
+	var rightclose='Close info';
+	var fontSizeTitle='Font size';
+	var bigger='Bigger';
+	var reset='Reset';
+	var smaller='Smaller';
+	var biggerTitle='Increase size';
+	var resetTitle='Revert styles to default';
+	var smallerTitle='Decrease size';
+</script>
+
+</head>
+
+<body>
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                                                        Adventures in Lifelong Development                                                                                <span class="header1">
+                                        /pavlakis                                        </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Skip to content</a></li>
+                                                <li><a href="#nav" class="u2">Jump to main navigation and login</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Nav view search</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+<ul class="menu">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-102"><a href="/about-antonios-pavlakis" >About Me</a></li><li class="item-103 current active"><a href="/php" >PHP</a></li><li class="item-121"><a href="https://github.com/pavlakis" >GitHub</a></li></ul>
+
+                                        <div id="line">
+                                        <div id="fontsize"></div>
+                                        <h3 class="unseen">Search</h3>
+                                        <form action="/php" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Search..."  onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="103" />
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="item-page">
+
+	<h2>
+			<a href="/php/8-moving-a-website-to-a-new-provider">
+		Moving a Website to a new Provider</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="/php/8-moving-a-website-to-a-new-provider?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=2583eb934e3b101fb1a933c5f7ce4709c0e6dbc2" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+	<dl class="article-info">
+	<dt class="article-info-term">Details</dt>
+	<dd class="create">
+	Created on Sunday, 27 March 2011 22:35	</dd>
+	</dl>
+
+
+
+<p>   
+  Moving a website can be a tricky task and it usually helps being extra careful than having an unsatisfied customer.
+  Below, I will just outline a few simple steps I take to make sure that everything goes smoothly.
+  First of all, when you decide to move server or hosting provider, give yourself a bit of extra time and get the new package first. This way, you will have enough time to do the switch with less stress; especially if you don’t know the environment or control panel being used.
+</p>
+ 
+<p>
+  I normally use a different provider for my DNS settings which is usually the same place I purchase my domains from. This way, when I need to change hosting provider, I don’t need to stress about the move. Just setup in the new place, and then do the switch.
+</p>
+<p>
+  So, let’s get started.
+  I take it that most people these days use database driven websites. This adds an extra layer of complexity. That’s ok, nothing to worry about we will just go over the implications and make sure we cover them also. 
+  Let’s say you have a Content Management System or blog (eg Drupal, Joomla, Wordpress, etc). As long as you have users using the website, eg adding articles, comments or other content, you need to make sure that when you make the transfer, the information you are passing is up-to-date.
+</p>
+<p>
+  My suggestion is, disable all users – apart from the admin – and export the database. This way, users can still view the content and you are certain to have the latest info when making the move.
+  On the new provider, create first the database. It is usually best practice to create a new database user with only the necessary access to the database. In general you will need: Select, Update, Insert Delete, but some systems may need more – you will need to check for that yourself.
+</p>
+<p>
+  At this point you can add to your configuration file ( if it is Joomla, that’s in configuration.php) the new configuration eg DB Host, DB Name, Username, Password.
+  If you are using UTF-8, open the database sql file that you’ve exported, and add the following line on the top: <br />
+  <strong>SET NAMES 'utf8';</strong><br />
+  Also, if you are using the command line to import the sql, it is usually safer to let the DB which database to use (this should go on the top of everything):  <br />
+  <strong>use my_db_name;</strong>
+</p>
+<p>
+  Next, we can sort out the code base. This step is straightforward although you should always be careful with the file permissions. Some providers have high security which you will need to change yourself. I will not be covering permissions here.
+</p>
+<p>
+  Now, this is the most important step. Test your new configuration.
+  On your new provider, whether you’ve got access to the VirtualHost configuration, or it is done automatically by a control panel, you will have an IP address pointing to your domain. At this point you are not pointing to that one. Your website is still live with your old provider.
+</p>
+<p>
+  To test it on the new one, you will need to add an entry to your hosts file. That will be something like: 
+  192.168.4.1 www.mysite.com 
+  Now you should be able to load and test your website on your new provider.
+</p>
+<p>
+  In most cases you don’t need to do much, but I have had to make changes to .htaccess especially when using mod_rewrite.
+  Once you are happy that everything works, re-activate all user accounts and change your DNS entries to point to your new domain.
+</p>
+  
+				<ul class="pagenav">
+					<li class="pagenav-prev">
+						<a href="/php/9-choose-your-default-action-in-zend-framework" rel="prev">&lt; Prev</a>
+					</li>
+					<li class="pagenav-next">
+						<a href="/php/6-zend-dojo-cdn-with-ssl" rel="next">Next &gt;</a>
+					</li>
+				</ul>
+	
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Powered by <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        <div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() { FB.init({appId: '485228941509888', status: true, cookie: true, xfbml: true}); };
+(function() { var e = document.createElement('script');
+e.type = 'text/javascript';
+e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+e.async = true;
+document.getElementById('fb-root').appendChild(e);
+}());
+</script></body>
+</html>

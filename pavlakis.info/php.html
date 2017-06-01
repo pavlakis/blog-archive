@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"  xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <base href="https://blog-archive.pavlakis.info/php" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>PHP</title>
+  <link href="/php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="/templates/beez_20/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/position.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/layout.css" type="text/css" media="screen,projection"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/print.css" type="text/css" media="print"  />
+  <link rel="stylesheet" href="/templates/beez_20/css/general.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/beez_20/css/nature.css" type="text/css" />
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/md_stylechanger.js" type="text/javascript"></script>
+  <script src="/templates/beez_20/javascript/hide.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});
+  </script>
+
+
+<!--[if lte IE 6]>
+<link href="/templates/beez_20/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link href="/templates/beez_20/css/ie7only.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript">
+	var big ='72%';
+	var small='53%';
+	var altopen='is open';
+	var altclose='is closed';
+	var bildauf='/templates/beez_20/images/plus.png';
+	var bildzu='/templates/beez_20/images/minus.png';
+	var rightopen='Open info';
+	var rightclose='Close info';
+	var fontSizeTitle='Font size';
+	var bigger='Bigger';
+	var reset='Reset';
+	var smaller='Smaller';
+	var biggerTitle='Increase size';
+	var resetTitle='Revert styles to default';
+	var smallerTitle='Decrease size';
+</script>
+
+</head>
+
+<body>
+
+<div id="all">
+        <div id="back">
+                <div id="header">
+                                <div class="logoheader">
+                                        <h1 id="logo">
+
+                                                                                                                        Adventures in Lifelong Development                                                                                <span class="header1">
+                                        /pavlakis                                        </span></h1>
+                                </div><!-- end logoheader -->
+                                        <ul class="skiplinks">
+                                                <li><a href="#main" class="u2">Skip to content</a></li>
+                                                <li><a href="#nav" class="u2">Jump to main navigation and login</a></li>
+                                                                                    </ul>
+                                        <h2 class="unseen">Nav view search</h2>
+                                        <h3 class="unseen">Navigation</h3>
+                                        
+<ul class="menu">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-102"><a href="/about-antonios-pavlakis" >About Me</a></li><li class="item-103 current active"><a href="/php" >PHP</a></li><li class="item-121"><a href="https://github.com/pavlakis" >GitHub</a></li></ul>
+
+                                        <div id="line">
+                                        <div id="fontsize"></div>
+                                        <h3 class="unseen">Search</h3>
+                                        <form action="/php" method="post">
+	<div class="search">
+		<label for="mod-search-searchword">Search...</label><input name="searchword" id="mod-search-searchword" maxlength="20"  class="inputbox" type="text" size="20" value="Search..."  onblur="if (this.value=='') this.value='Search...';" onfocus="if (this.value=='Search...') this.value='';" />	<input type="hidden" name="task" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="103" />
+	</div>
+</form>
+
+                                        </div> <!-- end line -->
+
+
+                        </div><!-- end header -->
+                        <div id="contentarea">
+                                        <div id="breadcrumbs">
+
+                                                        
+
+                                        </div>
+
+                                        
+                                        <div id="wrapper2" class="shownocolumns">
+
+                                                <div id="main">
+
+                                                
+                                                        
+<div id="system-message-container">
+</div>
+                                                        <div class="blog">
+
+	
+
+
+
+
+
+<div class="items-leading">
+			<div class="leading-0">
+			
+	<h2>
+					<a href="/php/23-having-a-go-at-creating-a-behat-3-extension">
+			Having a go at creating a Behat 3 extension</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/php/23-having-a-go-at-creating-a-behat-3-extension?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>		</li>
+						<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=6c8549c83224ad3d18ed96a633db6b25b8926c49" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>		</li>
+					</ul>
+
+
+
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="create">
+		Created on Thursday, 14 January 2016 23:53		</dd>
+ 	</dl>
+<p>Ever since I got accepted to do a tutorial on <a href="https://speakerdeck.com/agpavlakis/test-legacy-apps-with-behat">Test legacy apps with Behat</a> at the <a href="http://conference.phpnw.org.uk/phpnw15/">PHPNW15 conference</a>, I’ve been meaning to look into creating custom extensions for <a href="https://github.com/Behat/Behat">Behat</a>.</p>
+
+<p>I didn’t have enough time to research into this while preparing for the tutorial, so left it in my todo list in <a href="https://trello.com/">Trello</a>.</p>
+
+<p>During the PHPNW15 long weekend (Friday - Monday), at some point over lunch I was at the table where Matt Brunt (<a href="https://twitter.com/themattbrunt">@themattbrunt</a>) and Ciaran McNulty (<a href="https://twitter.com/ciaranmcnulty">@ciaranmcnulty</a>) were having a conversation about this and Ciaran said (paraphrasing) “In order to be able to write an extension, you really need to understand how Behat works.”</p>
+
+<p>So a few months later, sleeves up and I went into my <strong>vendor/bin/behat</strong> and started looking (and poking) around.</p>
+
+<p>Behat is a great application. Nice and clean code. And everything happens by magic - well, nearly. :)</p>
+
+<p>But… I won’t be going into that.</p>
+
+<p>I ended up taking a shortcut. I found a great article by its creator Konstantin Kudryashov (https://gist.github.com/everzet/9888598), and spent a lot of time looking into two existing extensions:</p>
+
+<ul>
+<li><a href="https://github.com/Behat/MinkExtension">Behat Mink Extension</a></li>
+<li><a href="https://github.com/laracasts/Behat-Laravel-Extension">Behat Laravel Extension</a></li>
+</ul>
+
+<p>I’ve actually used mostly the structure of the Laravel extension.</p>
+
+<p>The most important thing to keep in mind is that everything is being driven by Interfaces.</p>
+
+<p>Following the structure of the Laravel extension, we have three main folders:</p>
+<ul>
+<li>Context</li>
+<li>Driver (won’t cover this here)</li>
+<li>ServiceContainer</li>
+</ul>
+
+<h3>ServiceContainer/BehatExtension.php</h3>
+
+<p>This class implements <strong>Behat\Behat\Context\ServiceContainer\ContextExtension</strong>
+and requires/implements the following methods:</p>
+
+<ul>
+<li><strong>getConfigKey()</strong> - The extension config key</li>
+<li><strong>initialize(ExtensionManager $extensionManager)</strong> - used to hook into the configuration of other extensions e.g. Mink</li>
+<li><strong>process(ContainerBuilder $container)</strong> -  You can modify the container here before it is dumped to PHP code.</li>
+<li><strong>configure(ArrayNodeDefinition $builder)</strong> - Setups configuration for the extension.</li>
+<li><strong>load(ContainerBuilder $container, array $config)</strong> - Loads extension services into temporary container.</li>
+</ul>
+
+<h4>configure(ArrayNodeDefinition $builder)</h4>
+
+<p>This method enables you to set the configuration for the extension. The parameters you need and their default values.
+For the Slim 3 extension, I used the config_file location (settings.php) which together with the dependencies_file is pretty much all I need to load the Slim/App and populate the DI container.</p>
+
+<p>Adding the parameters in behat.yml</p>
+
+<script src="https://gist.github.com/pavlakis/8d3070606fadc45aca03.js"></script>
+
+<p>See the implementation on Github: <a href="https://github.com/pavlakis/slim-behat-extension/blob/master/src/ServiceContainer/BehatExtension.php#L42">https://github.com/pavlakis/slim-behat-extension/blob/master/src/ServiceContainer/BehatExtension.php#L42</a></p>
+
+<h4>load(ContainerBuilder $container, array $config)</h4>
+
+<p>This method lets you pass the configuration to your service in order to load it.</p>
+
+<p>The <strong>$config</strong> array gives you access to extension configuration parameters (in behat.yml) e.g. $config['config_file'] and $config['dependencies_file'] </p>
+
+<p>We can use those values to load our Service through the <strong>$container</strong>.</p>
+
+<p>The ContainerBuilder is used to:</p>
+<ul>
+<li>Create an instance of the Service and pass it to the builder using $container->set(..) </li>
+<li>Add a Definition containing the:<br/>
+* The Service and its link to its own extension class implementing ContextInitializer <br/>
+* A tag definition for the Service
+</li>
+
+<h4>Context/KernelAwareInitializer.php</h4>
+
+<p>This class implements <strong>Behat\Behat\Context\Initializer\ContextInitializer</strong> and requires/implements the following methods:</p>
+<strong>initializeContext(Context $context)</strong> - Initializes provided context.
+
+<p>The constructor makes the Service/Kernel available. In the <strong>initializeContext(Context $context)</strong> method we check if the Context passed is an instance of the context we are expecting (in this case Pavlakis\Slim\Behat\Context\KernelAwareContext which also implements Behat\Behat\Context\Context - but it is specific to our extension) and if it is, we add our Service to the Context.</p>
+
+<p><a href="https://github.com/pavlakis/slim-behat-extension/blob/master/src/Context/KernelAwareInitializer.php#L50">https://github.com/pavlakis/slim-behat-extension/blob/master/src/Context/KernelAwareInitializer.php#L50</a></p> 
+
+<h4>Pavlakis\Slim\Behat\Context\App.php (Trait)</h4>
+
+<p>This class is a Trait. And very important.</p>
+<p>It makes the app available through the FeatureContext class by just calling <strong>$this->app</strong></p>
+
+<p>To use it, implement <strong>Pavlakis\Slim\Behat\Context\KernelAwareContext</strong></p>
+
+<script src="https://gist.github.com/pavlakis/615ec0db9f4eda5732d2.js"></script>
+
+
+<p>And that’s it. These are the points that I spent most time on. Hope it helps.</p>
+
+<p>
+This extension is available available through packagist: <a href="https://packagist.org/packages/pavlakis/slim-behat-extension">https://packagist.org/packages/pavlakis/slim-behat-extension</a>
+<p>
+<p>And Github: <br/>
+<a href="https://github.com/pavlakis/slim-behat-extension">https://github.com/pavlakis/slim-behat-extension</a>
+</p>
+
+
+
+
+
+<div class="item-separator"></div>
+		</div>
+			</div>
+
+			<div class="items-row cols-1 row-0">
+		<div class="item column-1">
+		
+	<h2>
+					<a href="/php/22-making-a-cli-request-in-slim-3">
+			Making a CLI Request in Slim 3</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/php/22-making-a-cli-request-in-slim-3?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>		</li>
+						<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=71f8417b061256b57b9ed7033025aad343ee09fc" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>		</li>
+					</ul>
+
+
+
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="create">
+		Created on Saturday, 12 December 2015 12:01		</dd>
+ 	</dl>
+<p>I’m using <a href="https://twitter.com/akrabat">@akrabat</a>’s <a href="https://github.com/akrabat/slim3-skeleton">Slim 3 skeleton</a> for the <a href="http://phpminds.org/">PHPMinds website</a>, and I was looking for a way to make a Request through the CLI to use for crons and workers. But I wanted to call it the same way as a normal request. 
+<p>
+
+<p>
+<span style="text-decoration: underline; font-weight: bold;">php public/index.php /status GET event=true</span>
+</p>
+
+<p>
+DVO Media had a nice way of doing it in index.php: <a href="https://github.com/dvomedia/rest-skeleton/blob/master/web/index.php#L7">https://github.com/dvomedia/rest-skeleton/blob/master/web/index.php#L7</a> 
+</p>
+
+<p>
+With Slim 3 using middleware, I thought that may have been a tidier way to do it, as I don’t like to add any logic in my index.php 
+</p>
+
+<p>I thought initially I would add it to the route. That didn’t work. It was too late in the request cycle.</p>
+
+<p>I checked on irc (#slimphp) and <a href="https://twitter.com/akrabat">@akrabat</a> advised me to put it in the Middleware section. That did feel a much cleaner way to do it, and it worked!</p>
+
+<p>In the middleware section (middleware.php): <span style="text-decoration: underline; font-weight: bold;">$app-&gt;add(new App\Middleware\CliRequest());</span></p>
+
+<p>And the Middleware itself:</p>
+
+<script src="https://gist.github.com/pavlakis/5752c0afaceaf72c6321.js"></script>
+
+
+
+
+<div class="item-separator"></div>
+	</div>
+						<span class="row-separator"></span>
+				</div>
+
+						<div class="items-row cols-1 row-1">
+		<div class="item column-1">
+		
+	<h2>
+					<a href="/php/21-vagrant-ansible-generic">
+			A generic vagrant template using ansible</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/php/21-vagrant-ansible-generic?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>		</li>
+						<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=f6aa8c025ae4b4d315b1c03241596c9515399492" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>		</li>
+					</ul>
+
+
+
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="create">
+		Created on Friday, 06 February 2015 14:58		</dd>
+ 	</dl>
+<p>Most of the PHP projects I work on have a very similar structure. That’s why I created this template so I can reuse it across most projects.</p>
+
+<p>The initial Ansible package has originated from <a href=“http://www.phansible.com/”>Phansible.com</a> which is an awesome tool for easy generating vagrant provisioning using ansible.</p>
+
+<p>In order for this to be a good learning exercise, I created a github repository for the <a href=“https://github.com/pavlakis/vagrant-ansible-generic”>generic vagrant template using ansible</a> where I added branches for each configuration step with clear commits along the way.</p>
+
+<p>As an overview, these are the steps I’ve taken.</p>
+
+<ul>
+<li>(1) Generate the initial template from <a href=“http://www.phansible.com/”>Phansible.com</a> </li>
+<li>(2) Added Ansible tasks to import files in order to create the database schema and also to populate the database.</li>
+<li>(3) Created composer.json and added a task to run composer.</li>
+<li>(4) Created a basic hello world application with a namespace that uses composer’s autoloading.</li>
+</ul>
+
+<p>If you’re just interested for the final implementation, <a href=“https://github.com/pavlakis/vagrant-ansible-generic/tree/step4”>go straight to branch step4</a><p>
+
+
+
+<div class="item-separator"></div>
+	</div>
+						<span class="row-separator"></span>
+				</div>
+
+						<div class="items-row cols-1 row-2">
+		<div class="item column-1">
+		
+	<h2>
+					<a href="/php/20-getting-started-with-composer-and-psr-4">
+			Getting started with Composer and PSR-4</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/php/20-getting-started-with-composer-and-psr-4?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>		</li>
+						<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=a2a7c5728e5e664e083c9a7e7093e8c84245e93d" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>		</li>
+					</ul>
+
+
+
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="create">
+		Created on Tuesday, 04 February 2014 19:45		</dd>
+ 	</dl>
+<p>Getting started with PSR-4 and composer in your projects</p>
+<p>For comments, go to <a href="https://gist.github.com/pavlakis/8810829#file-gistfile1-php">gist.github.com/pavlakis/8810829#file-gistfile1-php</a></p>
+<p>For completeness, I've included one of my comments below:</p>
+<p>For efficiency, we shouldn't be including the tests directory on the main namespace. Instead, we can add it to the autoloader but only in the phpunit's bootstrap. (thanks to <a href="http://www.twitter.com/noginn">@noginn</a> for his suggestion)</p>
+<p>We can adapt the above example by making three changes:</p>
+<ol>
+<li>In composer.json remove the reference to tests/, save and run composer update</li>
+<li>Create MyApp/tests/bootstrap.php</li>
+<li>$autoloader = require DIR . '/../vendor/autoload.php'; <br /> $autoloader-&gt;add('MyApp\Tests\', DIR);</li>
+<li>Change the bootstrap reference in MyApp/tests/phpunit.xml.dist to: bootstrap.php</li>
+</ol>
+<p>&nbsp;</p>
+
+<p>The above example is available through github: <a href="https://github.com/pavlakis/psr4-with-composer">https://github.com/pavlakis/psr4-with-composer</a></p>
+
+
+<div class="item-separator"></div>
+	</div>
+						<span class="row-separator"></span>
+				</div>
+
+						<div class="items-row cols-1 row-3">
+		<div class="item column-1">
+		
+	<h2>
+					<a href="/php/19-quick-script-tests">
+			Quick script tests</a>
+			</h2>
+
+	<ul class="actions">
+				<li class="print-icon">
+			<a href="/php/19-quick-script-tests?tmpl=component&amp;print=1&amp;layout=default&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/media/system/images/printButton.png" alt="Print"  /></a>		</li>
+						<li class="email-icon">
+			<a href="/component/mailto/?tmpl=component&amp;template=beez_20&amp;link=4a363f77c31c5661b2e2dfe2de9e7dd2103f0a6c" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="/media/system/images/emailButton.png" alt="Email"  /></a>		</li>
+					</ul>
+
+
+
+
+ <dl class="article-info">
+ <dt class="article-info-term">Details</dt>
+		<dd class="create">
+		Created on Tuesday, 03 December 2013 11:05		</dd>
+ 	</dl>
+<p style="text-align: justify;">You know how it is. There is some logic you want to test quickly before implementing it as part of your script.</p>
+<p style="text-align: justify;">One way to do it would be to create a new file just to test that.</p>
+<p style="text-align: justify;">An easier way, is to do it using interactive shell.</p>
+<p style="text-align: justify;">To start:</p>
+<p style="text-align: justify;">php -a</p>
+<p style="text-align: justify;">To end:</p>
+<p style="text-align: justify;">exit</p>
+<p style="text-align: justify;">&nbsp;</p>
+
+
+<div class="item-separator"></div>
+	</div>
+						<span class="row-separator"></span>
+				</div>
+
+				
+
+
+
+	
+
+<div class="items-more">
+
+<h3>More Articles...</h3>
+<ol>
+	<li>
+		<a href="/php/18-using-composer-with-your-projects">
+			Using composer with your projects</a>
+	</li>
+	<li>
+		<a href="/php/17-phpunit-issues-in-mac-os-x-mountain-lion">
+			PHPUnit issues in Mac OS X Mountain Lion</a>
+	</li>
+	<li>
+		<a href="/php/14-application-security-and-your-database">
+			Application security and your Database</a>
+	</li>
+	<li>
+		<a href="/php/13-zf1-bootstrap-to-comply-to-psr-standard">
+			ZF1 Bootstrap to comply to PSR standard</a>
+	</li>
+</ol>
+</div>
+
+
+
+	
+		<div class="pagination">
+												<p class="counter">
+								Page 1 of 4						</p>
+
+								<ul><li class="pagination-start"><span class="pagenav">Start</span></li><li class="pagination-prev"><span class="pagenav">Prev</span></li><li><span class="pagenav">1</span></li><li><a title="2" href="/php?start=5" class="pagenav">2</a></li><li><a title="3" href="/php?start=10" class="pagenav">3</a></li><li><a title="4" href="/php?start=15" class="pagenav">4</a></li><li class="pagination-next"><a title="Next" href="/php?start=5" class="pagenav">Next</a></li><li class="pagination-end"><a title="End" href="/php?start=15" class="pagenav">End</a></li></ul>		</div>
+
+</div>
+
+
+                                                </div><!-- end main -->
+
+                                        </div><!-- end wrapper -->
+
+                                
+                        
+                                <div class="wrap"></div>
+
+                                </div> <!-- end contentarea -->
+
+                        </div><!-- back -->
+
+                </div><!-- all -->
+
+                <div id="footer-outer">
+                        
+                        <div id="footer-sub">
+
+
+                                <div id="footer">
+
+                                        
+                                        <p>
+                                                Powered by <a href="http://www.joomla.org/">Joomla!&#174;</a>
+                                        </p>
+
+
+                                </div><!-- end footer -->
+
+                        </div>
+
+                </div>
+				
+        <div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() { FB.init({appId: '485228941509888', status: true, cookie: true, xfbml: true}); };
+(function() { var e = document.createElement('script');
+e.type = 'text/javascript';
+e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+e.async = true;
+document.getElementById('fb-root').appendChild(e);
+}());
+</script></body>
+</html>
